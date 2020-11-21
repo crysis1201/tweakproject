@@ -80,9 +80,11 @@
         </div>
           <div class="mt-10 bg-darkbrown pt-10 pb-10 pl-10 pr-10 mx-auto rounded">
             <div class="md:flex mx-auto items-center justify-between">
-              <img class="max-w-screen-sm flex justify-self-center mx-auto md:hidden" :src="require('./assets/pngs/social.png')"/>
-              <img class="max-w-screen-sm md:flex justify-self-center mx-auto hidden" :src="require('./assets/pngs/social1.png')"/>
-              <div class="pl-10">
+              <div class="mx-auto">
+                <img class="md:hidden mx-auto" :src="require('./assets/pngs/social.png')"/>
+                <img class="max-w-screen-sm md:flex justify-self-center mx-auto hidden" :src="require('./assets/pngs/social1.png')"/>
+              </div>
+              <div class="tablet:pl-10">
                 <h1 class="text-3xl pb-6 text-center md:text-right"> Tweak Digital Services </h1>
                 <p class="footer-text leading-8 text-center md:text-right"> We believe that <b> every business needs a digital marketing partner </b> who wants to <i> invest the time </i> to get to know that business. We are here to grow your digital business. If you really serious about your online business then simply give a call. </p>
               </div>  
