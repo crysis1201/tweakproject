@@ -1,14 +1,14 @@
 <template>
-  <div id="app" class="mx-auto p-8 text-brown bg-babypink" >
+  <div id="app" class="mx-auto p-8 text-brown bg-babyblue" >
     <header class="max-w-screen-lg mx-auto flex justify-between items-center pb-10">
       <div class="inline-flex">
         <h1 class="text-lg text-brown "> Tweak Digital Service </h1>
       </div>
       <div class="tablet:inline-flex hidden ">
-        <router-link to="/"><div class="text-brown cursor-pointer hover:bg-hoverpink px-2 py-1 rounded"><p>Home</p></div></router-link>
-        <router-link to="/about"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverpink px-2 py-1 rounded"><p>Services</p></div></router-link>
-        <router-link to="/pricing"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverpink px-2 py-1 rounded"><p>Pricing</p></div></router-link>
-        <router-link to="/contact"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverpink px-2 py-1 rounded"><p>Contact Us</p></div></router-link>
+        <router-link to="/"><div class="text-brown cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Home</p></div></router-link>
+        <router-link to="/services"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Services</p></div></router-link>
+        <router-link to="/pricing"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Pricing</p></div></router-link>
+        <router-link to="/contact"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Contact Us</p></div></router-link>
       </div>
       <div @click='toggle = !toggle' class="flex tablet:hidden">
             <div id="menu-btn"  @click="menuOpen = ! menuOpen" v-bind:class="{open: menuOpen}" class="menu-btn flex items-center tablet:hidden ">
@@ -17,7 +17,7 @@
             </div>
       </div>
     </header>
-      <div v-show='toggle' class="bg-babypink transition-opacity tablet:hidden border-textpink border-opacity-70 border-2 h-auto pt-8 pb-8  w-11/12 mx-auto rounded shadow-2xl absolute left-0 right-0 ">
+      <div v-show='toggle' class="bg-babyblue transition-opacity tablet:hidden border-textpink border-opacity-70 border-2 h-auto pt-8 pb-8  w-11/12 mx-auto rounded shadow-2xl absolute left-0 right-0 ">
         <div class="w-auto pb-3">
           <router-link to="/"><p class="text-center text-brown cursor-pointer pb-1 ">Home</p></router-link>
           <div class="w-1/4 rounded mx-auto h-0.5 bg-textbrown opacity-40"></div>
