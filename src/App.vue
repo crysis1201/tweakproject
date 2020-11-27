@@ -29,9 +29,11 @@
           <div class="w-1/4 rounded mx-auto h-0.5 bg-textbrown opacity-40"></div>
         </div>
           <div class="w-auto pb-3 pt-3">
-          <p class="text-center text-black cursor-not-allowed pb-2">social</p>
-          <router-link to="/social-Media-Marketing"><p class="text-center text-brown cursor-pointer pb-1  "><i>Social Media Marketing</i></p></router-link>
-          <router-link to="/Web-Development"><p class="text-center text-brown cursor-pointer pb-2 "><i>Web Development</i></p></router-link>
+          <p class="text-center text-brown cursor-pointer pb-2" @click="dropDown = ! dropDown" >Services</p>
+          <div class="drop-m transition-opacity "  v-bind:class="{show: dropDown}">
+            <router-link to="/social-Media-Marketing"><p class="text-center text-brown cursor-pointer pb-1  "><i>Social Media Marketing</i></p></router-link>
+            <router-link to="/Web-Development"><p class="text-center text-brown cursor-pointer pb-2 "><i>Web Development</i></p></router-link>
+          </div>
           <div class="w-1/4 rounded mx-auto h-0.5 bg-textbrown opacity-40"></div>
         </div> <div class="w-auto pb-3 pt-3">
           <router-link to="/pricing"><p class="text-center text-brown cursor-pointer pb-1 ">Pricing</p></router-link>         
@@ -106,6 +108,7 @@ export default {
    return {
      menuOpen: false,
      toggle: false,
+     dropDown: false,
    }
  }, 
 }
@@ -181,4 +184,12 @@ export default {
           display: block;
         }
         
+        .drop-m {
+          display: none;
+        }
+
+        .drop-m.show {
+          display: block;
+        }
+
 </style>
