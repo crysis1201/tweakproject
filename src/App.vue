@@ -5,8 +5,14 @@
         <h1 class="text-lg text-brown "> Tweak Digital Service </h1>
       </div>
       <div class="tablet:inline-flex hidden ">
-        <router-link to="/"><div class="text-brown cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Home</p></div></router-link>
-        <router-link to="/services"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Services</p></div></router-link>
+        <router-link to="/"><div class="text-brown cursor-pointer mr-12 hover:bg-hoverblue px-2 py-1 rounded"><p>Home</p></div></router-link>
+        <div class="dropdown relative inline-block mx-auto" >
+          <div class=" dropBtn text-brown cursor-default   px-2 py-1 rounded"><p>Services</p></div>
+          <div class="dropdown-content hidden rounded-md absolute mx-auto w-auto border-hoverblue border-2 bg-dropblue shadow-inner transition-shadow z-1">
+            <router-link to="/social-Media-Marketing"><div class="text-brown text-center cursor-pointer hover:bg-hoverblue px-2 mx-4 py-1 my-3 italic rounded"><p>Social Media Marketing</p></div></router-link>
+            <router-link to="/Web-Development"><div class="text-brown text-center cursor-pointer hover:bg-hoverblue px-2 mx-4 py-1 my-3 italic rounded"><p>Web Development</p></div></router-link>
+          </div>
+        </div>
         <router-link to="/pricing"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Pricing</p></div></router-link>
         <router-link to="/contact"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Contact Us</p></div></router-link>
       </div>
@@ -23,7 +29,9 @@
           <div class="w-1/4 rounded mx-auto h-0.5 bg-textbrown opacity-40"></div>
         </div>
           <div class="w-auto pb-3 pt-3">
-          <router-link to="/services"><p class="text-center text-brown cursor-pointer pb-1 ">Services</p></router-link>
+          <p class="text-center text-black cursor-not-allowed pb-2">social</p>
+          <router-link to="/social-Media-Marketing"><p class="text-center text-brown cursor-pointer pb-1  "><i>Social Media Marketing</i></p></router-link>
+          <router-link to="/Web-Development"><p class="text-center text-brown cursor-pointer pb-2 "><i>Web Development</i></p></router-link>
           <div class="w-1/4 rounded mx-auto h-0.5 bg-textbrown opacity-40"></div>
         </div> <div class="w-auto pb-3 pt-3">
           <router-link to="/pricing"><p class="text-center text-brown cursor-pointer pb-1 ">Pricing</p></router-link>         
@@ -34,6 +42,61 @@
         </div>
       </div>
     <router-view />
+    <div class="mt-10 bg-darkbrown pt-10 pb-10 pl-10 pr-10 mx-auto max-w-screen-lg rounded">
+            <div class="md:flex mx-auto items-center justify-between">
+              <div class="mx-auto">
+                <img class="md:hidden mx-auto" :src="require('./assets/pngs/social.png')"/>
+                <img class="max-w-screen-sm md:flex justify-self-center mx-auto hidden" :src="require('./assets/pngs/social1.png')"/>
+              </div>
+              <div class="tablet:pl-10">
+                <h1 class="text-3xl pb-6 text-center md:text-right"> Tweak Digital Services </h1>
+                <p class="footer-text leading-8 text-center md:text-right"> We believe that <b> every business needs a digital marketing partner </b> who wants to <i> invest the time </i> to get to know that business. We are here to grow your digital business. If you really serious about your online business then simply give a call. </p>
+              </div>  
+            </div>
+            <div class="md:float-right text-center mx-auto">
+              <div class="mobile:inline-flex justify-end pt-6 hidden">
+                  <img class="w-16" :src="require('./assets/icons/fb.svg')"/>
+                  <img class="ml-4 w-16" :src="require('./assets/icons/insta.svg')"/>
+                  <img class="ml-4 w-16" :src="require('./assets/icons/linkedin.svg')"/>
+                  <img class="ml-4 w-16" :src="require('./assets/icons/twitter.svg')"/>
+                  <img class="ml-4 w-16" :src="require('./assets/icons/whatsapp.svg')"/>
+              </div>
+              <div class="mobile:hidden justify-end pt-6  ">
+                <div class="mx-auto inline-flex">
+                  <img class="w-16 in" :src="require('./assets/icons/fb.svg')"/>
+                  <img class="ml-4 w-16" :src="require('./assets/icons/insta.svg')"/>
+                  <img class="ml-4 w-16" :src="require('./assets/icons/linkedin.svg')"/>
+                </div>
+                <div class="mx-auto inline-flex" >
+                  <img class="ml-4 w-16" :src="require('./assets/icons/twitter.svg')"/>
+                  <img class="ml-4 w-16" :src="require('./assets/icons/whatsapp.svg')"/>
+                </div>
+              </div>
+            </div>
+              <div class="mt-6 clear-both mb-6 w-12/12 h-0.5 bg-babypink opacity-30"></div>
+              <div class="pt-6 sm:flex justify-between">
+                <div class="tablet:inline-flex tablet:items-center block sm:pt-0 pt-4">
+                  <img class="w-16 mx-auto" :src="require('./assets/icons/phone.png')"/>
+                  <div class="tablet:pl-4 text-center pl-0 mx-auto tablet:pt-0 pt-4 text-babypink">
+                    <p>+91 7010137212</p>
+                    <p>+91 9361649326</p>
+                  </div>
+                </div>
+                 <div class="tablet:inline-flex tablet:items-center block sm:pt-0 pt-4" >
+                  <img class="w-16 mx-auto" :src="require('./assets/icons/gmail.png')"/>
+                  <div class="tablet:pl-4 pl-0 text-center mx-auto tablet:pt-0 pt-4 text-babypink">
+                    <p>tweakdigitalservices.com</p>
+                  </div>
+                </div>
+                 <div class="tablet:inline-flex tablet:items-center block sm:pt-0 pt-4" >
+                  <img class="w-16 m-auto" :src="require('./assets/icons/map.png')"/>
+                  <div class="tablet:pl-4 pl-0 m-auto tablet:pt-0 pt-4 text-babypink text-center">
+                    <p>Woraiyur, Trichy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="pt-6 text-center text-sm">Copyright @ tweakdigitalservices 2020 This site is Designed and Developed by Eazhilamuthan in regards of Tweak Digital Services</p>
   </div>
 </template>
 
@@ -113,4 +176,9 @@ export default {
           transform: rotate(-45deg) translate(35px, 35px);
           margin-top: 0px;
         }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
 </style>

@@ -12,11 +12,13 @@ module.exports = {
       babyblue: '#F6F7FE',
       hoverblue: '#D9DCF1',
       darkblue: '#e9ecfe',
+      dropblue: '#f0f2ff',
       progress1: '#ed7899',
       progress2: '#60be92',
       progress3: '#5594fd',
       progress4: '#f3c986',
       white: '#fffff',
+      black: '#383838',
     },
     screens: {
 

@@ -45,64 +45,7 @@
             <p class="text-center mx-auto " >Motion Graphics Designer, Illustrator, Social Media Marketing and Sales Consultant</p>
           </div>
         </div>
-          <div class="mt-10 bg-darkbrown pt-10 pb-10 pl-10 pr-10 mx-auto rounded">
-            <div class="md:flex mx-auto items-center justify-between">
-              <div class="mx-auto">
-                <img class="md:hidden mx-auto" :src="require('../assets/pngs/social.png')"/>
-                <img class="max-w-screen-sm md:flex justify-self-center mx-auto hidden" :src="require('../assets/pngs/social1.png')"/>
-              </div>
-              <div class="tablet:pl-10">
-                <h1 class="text-3xl pb-6 text-center md:text-right"> Tweak Digital Services </h1>
-                <p class="footer-text leading-8 text-center md:text-right"> We believe that <b> every business needs a digital marketing partner </b> who wants to <i> invest the time </i> to get to know that business. We are here to grow your digital business. If you really serious about your online business then simply give a call. </p>
-              </div>  
-            </div>
-            <div class="md:float-right text-center mx-auto">
-              <div class="mobile:inline-flex justify-end pt-6 hidden">
-                  <img class="w-16" :src="require('../assets/icons/fb.svg')"/>
-                  <img class="ml-4 w-16" :src="require('../assets/icons/insta.svg')"/>
-                  <img class="ml-4 w-16" :src="require('../assets/icons/linkedin.svg')"/>
-                  <img class="ml-4 w-16" :src="require('../assets/icons/twitter.svg')"/>
-                  <img class="ml-4 w-16" :src="require('../assets/icons/whatsapp.svg')"/>
-              </div>
-              <div class="mobile:hidden justify-end pt-6  ">
-                <div class="mx-auto inline-flex">
-                  <img class="w-16 in" :src="require('../assets/icons/fb.svg')"/>
-                  <img class="ml-4 w-16" :src="require('../assets/icons/insta.svg')"/>
-                  <img class="ml-4 w-16" :src="require('../assets/icons/linkedin.svg')"/>
-                </div>
-                <div class="mx-auto inline-flex" >
-                  <img class="ml-4 w-16" :src="require('../assets/icons/twitter.svg')"/>
-                  <img class="ml-4 w-16" :src="require('../assets/icons/whatsapp.svg')"/>
-                </div>
-              </div>
-            </div>
-              <div class="mt-6 clear-both mb-6 w-12/12 h-0.5 bg-babypink opacity-30"></div>
-              <div class="pt-6 sm:flex justify-between">
-                <div class="tablet:inline-flex tablet:items-center block sm:pt-0 pt-4">
-                  <img class="w-16 mx-auto" :src="require('../assets/icons/phone.png')"/>
-                  <div class="tablet:pl-4 text-center pl-0 mx-auto tablet:pt-0 pt-4 text-babypink">
-                    <p>+91 7010137212</p>
-                    <p>+91 9361649326</p>
-                  </div>
-                </div>
-                 <div class="tablet:inline-flex tablet:items-center block sm:pt-0 pt-4" >
-                  <img class="w-16 mx-auto" :src="require('../assets/icons/gmail.png')"/>
-                  <div class="tablet:pl-4 pl-0 text-center mx-auto tablet:pt-0 pt-4 text-babypink">
-                    <p>tweakdigitalservices.com</p>
-                  </div>
-                </div>
-                 <div class="tablet:inline-flex tablet:items-center block sm:pt-0 pt-4" >
-                  <img class="w-16 m-auto" :src="require('../assets/icons/map.png')"/>
-                  <div class="tablet:pl-4 pl-0 m-auto tablet:pt-0 pt-4 text-babypink text-center">
-                    <p>Woraiyur, Trichy</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p class="pt-6 text-center text-sm">Copyright @ tweakdigitalservices 2020 This site is Designed and Developed by Eazhilamuthan in regards of Tweak Digital Services</p>
-          
         
-
       </div>
     </body>
    
