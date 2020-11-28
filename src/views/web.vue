@@ -7,13 +7,13 @@
       <div class="sm:px-16">
           <div class="tablet:flex justify-between items-center">
             <div class="tablet:max-w-sm" >
-              <h1 class="text-3xl text-left pb-8 block text-textbrown" >
+              <h1 data-aos="fade-left" class="text-3xl text-left pb-8 block text-textbrown" >
                 Web Development
               </h1>
-              <p class="text-md text-textbrown" >
+              <p data-aos="fade-right" class="text-md text-textbrown" >
                 Do you need to a website for your business a Landing site or a E-commerce site, Don't worry we are here for you . We can make your dream website come true...
               </p>
-              <ul class="pt-8">
+              <ul data-aos="fade-left" class="pt-8">
                 <li class="items-center flex pb-2" >
                   <img class="max-w-xs w-4" :src="require('../assets/pngs/check.png')"/>
                   <p class="pl-6"> Landing Sites </p>
@@ -33,31 +33,31 @@
               </ul>
             </div>
             <div class="tablet:pt-0 pt-8 tablet:pr-12">
-              <img class="tablet:max-w-xs  sm:max-w-sm tablet:mx-0 mx-auto" :src="require('../assets/pngs/web.png')"/>
+              <img data-aos="fade-left" class="tablet:max-w-xs  sm:max-w-sm tablet:mx-0 mx-auto" :src="require('../assets/pngs/web.png')"/>
             </div>
           </div>
           <div class="bg-darkblue mt-6 mobile:mb-0 mb-10  h-11/12">
             <div class="max-w-screen-lg mountain absolute top-3/4">
-                <img class="mx-auto" :src="require('../assets/pngs/mountain.png')"/>
+                <img data-aos="flip-up" class="mx-auto" :src="require('../assets/pngs/mountain.png')"/>
             </div>
             <div class="pt-10 mx-auto max-w-lg relative z-10  ">
-              <h1 class="text-xl text-center mx-auto z-100 uppercase text-textbrown" >
+              <h1 data-aos="fade-right" class="text-xl text-center mx-auto z-100 uppercase text-textbrown" >
                 Content Marketing
               </h1>
-              <p class="text-md text-textbrown mx-auto text-center pt-6 leading-8">
+              <p data-aos="fade-left" class="text-md text-textbrown mx-auto text-center pt-6 leading-8">
                 We will guide you monthly and weekly on the tasks that needs to be done to build your online presence using blogging and social media marketing.
               </p>
               <img class="pt-10 w-56 mx-auto" :src="require('../assets/pngs/web1.png')"/>
-              <h1 class="text-xl pt-10 text-center mx-auto uppercase text-textbrown" >
+              <h1 data-aos="fade-right" class="text-xl pt-10 text-center mx-auto uppercase text-textbrown" >
                 Content Marketing
               </h1>
-              <p class="text-md text-textbrown mx-auto text-center pt-6 leading-8  ">
+              <p data-aos="fade-left" class="text-md text-textbrown mx-auto text-center pt-6 leading-8  ">
                 We will guide you monthly and weekly on the tasks that needs to be done to build your online presence using blogging and social media marketing.
               </p>
             </div>
           </div>
-          <div class=" mt-10 z-100 relative ">
-              <h1 class="text-3xl text-left block text-textbrown pb-10" >
+          <div data-aos="fade-left" class=" mt-10 z-100 relative ">
+              <h1 data-aos="fade-right" class="text-3xl text-left block text-textbrown pb-10" >
                Our Expertize
               </h1>
               <div>

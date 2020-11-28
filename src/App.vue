@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="mx-auto p-8 text-brown bg-babyblue" >
-    <header class="max-w-screen-lg mx-auto flex justify-between items-center pb-10">
+    <header data-aos="fade-left" class="max-w-screen-lg mx-auto flex justify-between items-center pb-10">
       <div class="inline-flex">
         <h1 class="text-lg text-brown "> Tweak Digital Service </h1>
       </div>
@@ -8,7 +8,7 @@
         <router-link to="/"><div class="text-brown cursor-pointer mr-12 hover:bg-hoverblue px-2 py-1 rounded"><p>Home</p></div></router-link>
         <div class="dropdown relative inline-block mx-auto" >
           <div class=" dropBtn text-brown cursor-default   px-2 py-1 rounded"><p>Services</p></div>
-          <div class="dropdown-content hidden rounded-md absolute mx-auto w-auto border-hoverblue border-2 bg-dropblue shadow-inner transition-shadow z-1">
+          <div class="dropdown-content hidden rounded-md absolute mx-auto w-auto border-hoverblue border-2 bg-dropblue shadow-inner z-1">
             <router-link to="/social-Media-Marketing"><div class="text-brown text-center cursor-pointer hover:bg-hoverblue px-2 mx-4 py-1 my-3 italic rounded"><p>Social Media Marketing</p></div></router-link>
             <router-link to="/Web-Development"><div class="text-brown text-center cursor-pointer hover:bg-hoverblue px-2 mx-4 py-1 my-3 italic rounded"><p>Web Development</p></div></router-link>
           </div>
@@ -23,7 +23,7 @@
             </div>
       </div>
     </header>
-      <div v-show='toggle' class="bg-babyblue transition-opacity tablet:hidden border-textpink border-opacity-70 border-2 h-auto pt-8 pb-8  w-11/12 mx-auto rounded shadow-2xl absolute left-0 right-0 ">
+      <div v-show='toggle' class="bg-babyblue z-10 transition-opacity tablet:hidden border-textpink border-opacity-70 border-2 h-auto pt-8 pb-8  w-11/12 mx-auto rounded shadow-2xl absolute left-0 right-0 ">
         <div class="w-auto pb-3">
           <router-link to="/"><p class="text-center text-brown cursor-pointer pb-1 ">Home</p></router-link>
           <div class="w-1/4 rounded mx-auto h-0.5 bg-textbrown opacity-40"></div>
@@ -45,7 +45,7 @@
       </div>
     <router-view />
     <div class="mt-10 bg-darkbrown pt-10 pb-10 pl-10 pr-10 mx-auto max-w-screen-lg rounded">
-            <div class="md:flex mx-auto items-center justify-between">
+            <div data-aos="fade-left" class="md:flex mx-auto items-center justify-between">
               <div class="mx-auto">
                 <img class="md:hidden mx-auto" :src="require('./assets/pngs/social.png')"/>
                 <img class="max-w-screen-sm md:flex justify-self-center mx-auto hidden" :src="require('./assets/pngs/social1.png')"/>
@@ -55,7 +55,7 @@
                 <p class="footer-text leading-8 text-center md:text-right"> We believe that <b> every business needs a digital marketing partner </b> who wants to <i> invest the time </i> to get to know that business. We are here to grow your digital business. If you really serious about your online business then simply give a call. </p>
               </div>  
             </div>
-            <div class="md:float-right text-center mx-auto">
+            <div data-aos="fade-right" class="md:float-right text-center mx-auto">
               <div class="mobile:inline-flex justify-end pt-6 hidden">
                   <img class="w-16" :src="require('./assets/icons/fb.svg')"/>
                   <img class="ml-4 w-16" :src="require('./assets/icons/insta.svg')"/>
@@ -76,7 +76,7 @@
               </div>
             </div>
               <div class="mt-6 clear-both mb-6 w-12/12 h-0.5 bg-babypink opacity-30"></div>
-              <div class="pt-6 sm:flex justify-between">
+              <div data-aos="fade-left" class="pt-6 sm:flex justify-between">
                 <div class="tablet:inline-flex tablet:items-center block sm:pt-0 pt-4">
                   <img class="w-16 mx-auto" :src="require('./assets/icons/phone.png')"/>
                   <div class="tablet:pl-4 text-center pl-0 mx-auto tablet:pt-0 pt-4 text-babypink">

@@ -5,15 +5,15 @@
         <img class="w-9/12" :src="require('../assets/icons/home.svg')"/>
       </div>
       <div class="sm:px-16">
-          <div class="tablet:flex justify-between items-center">
+          <div  class="tablet:flex justify-between items-center">
             <div class="tablet:max-w-sm" >
-              <h1 class="text-3xl text-left pb-8 block text-textbrown" >
+              <h1 data-aos="fade-left" class="text-3xl text-left pb-8 block text-textbrown" >
                 Social Media Marketing Services
               </h1>
-              <p class="text-md text-textbrown" >
+              <p data-aos="fade-left" class="text-md text-textbrown" >
                 Do you need to get your business to a whole new level by using the most effective form of marketing available today? Good news, We are here to help...
               </p>
-              <ul class="pt-8">
+              <ul data-aos="fade-left" class="pt-8">
                 <li class="items-center flex pb-2" >
                   <img class="max-w-xs w-4" :src="require('../assets/pngs/check.png')"/>
                   <p class="pl-6"> Brand Monitoring </p>
@@ -32,31 +32,31 @@
                 </li>
               </ul>
             </div>
-            <div class="tablet:pt-0 pt-8 ">
+            <div data-aos="fade-left" class="tablet:pt-0 pt-8 ">
               <img class="tablet:max-w-xs  sm:max-w-sm tablet:mx-0 mx-auto" :src="require('../assets/pngs/social2.png')"/>
             </div>
           </div>
-          <div class="bg-darkblue mt-6 mobile:mb-0 mb-10  h-11/12">
-            <div class="max-w-screen-lg mountain absolute top-3/4">
+          <div  class="bg-darkblue mt-6 mobile:mb-0 mb-10  h-11/12">
+            <div data-aos="fade-left" class="max-w-screen-lg mountain absolute top-3/4">
                 <img class="mx-auto" :src="require('../assets/pngs/mountain.png')"/>
             </div>
             <div class="pt-10 mx-auto max-w-lg relative z-10  ">
-              <h1 class="text-xl text-center mx-auto z-100 uppercase text-textbrown" >
+              <h1 data-aos="fade-left" class="text-xl text-center mx-auto z-100 uppercase text-textbrown" >
                 Content Marketing
               </h1>
-              <p class="text-md text-textbrown mx-auto text-center pt-6 leading-8">
+              <p data-aos="fade-left" class="text-md text-textbrown mx-auto text-center pt-6 leading-8">
                 We will guide you monthly and weekly on the tasks that needs to be done to build your online presence using blogging and social media marketing.
               </p>
-              <img class="pt-10 w-56 mx-auto" :src="require('../assets/pngs/content.png')"/>
-              <h1 class="text-xl pt-10 text-center mx-auto uppercase text-textbrown" >
+              <img data-aos="fade-left" class="pt-10 w-56 mx-auto" :src="require('../assets/pngs/content.png')"/>
+              <h1 data-aos="fade-left" class="text-xl pt-10 text-center mx-auto uppercase text-textbrown" >
                 Content Marketing
               </h1>
-              <p class="text-md text-textbrown mx-auto text-center pt-6 leading-8  ">
+              <p data-aos="fade-left" class="text-md text-textbrown mx-auto text-center pt-6 leading-8  ">
                 We will guide you monthly and weekly on the tasks that needs to be done to build your online presence using blogging and social media marketing.
               </p>
             </div>
           </div>
-          <div class=" mt-10 z-100 relative ">
+          <div data-aos="fade-left" class=" mt-10 z-100 relative ">
               <h1 class="text-3xl text-left block text-textbrown pb-10" >
                Our Expertize
               </h1>
