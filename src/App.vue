@@ -17,34 +17,34 @@
         <router-link to="/contact"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Contact Us</p></div></router-link>
       </div>
       <div @click='toggle = !toggle' class="flex tablet:hidden">
-            <div id="menu-btn"  @click="menuOpen = ! menuOpen" v-bind:class="{open: menuOpen}" class="menu-btn flex items-center tablet:hidden ">
+            <div id="menu-btn"  @click="menuOpen = ! menuOpen" v-bind:class="{open: menuOpen}" class="menu-btn cursor-default flex items-center tablet:hidden ">
               <div id="menu-btn__burger" class="menu-btn__burger"></div>
-              <p class="ml-3 inner font-medium">Menu</p>
+              <p class="ml-3 cursor-default inner font-medium">Menu</p>
             </div>
       </div>
     </header>
       <div v-show='toggle' class="bg-babyblue z-10 transition-opacity tablet:hidden border-textpink border-opacity-70 border-2 h-auto pt-8 pb-8  w-11/12 mx-auto rounded shadow-2xl absolute left-0 right-0 ">
         <div class="w-auto pb-3">
-          <router-link to="/"><p class="text-center text-brown cursor-pointer pb-1 ">Home</p></router-link>
+          <router-link to="/"><p @click='toggle = !toggle' @click="menuOpen = ! menuOpen" class="text-center noselect text-brown cursor-default pb-1 ">Home</p></router-link>
           <div class="w-1/4 rounded mx-auto h-0.5 bg-textbrown opacity-40"></div>
         </div>
           <div class="w-auto pb-3 pt-3">
-          <p class="text-center text-brown cursor-pointer pb-2" @click="dropDown = ! dropDown" >Services</p>
+          <p class="text-center noselect text-brown cursor-default pb-2" @click="dropDown = ! dropDown" >Services</p>
           <div class="drop-m transition-opacity "  v-bind:class="{show: dropDown}">
-            <router-link to="/social-Media-Marketing"><p class="text-center text-brown cursor-pointer pb-1  "><i>Social Media Marketing</i></p></router-link>
-            <router-link to="/Web-Development"><p class="text-center text-brown cursor-pointer pb-2 "><i>Web Development</i></p></router-link>
+            <router-link to="/Social-Media-Marketing"><p @click="menuOpen = ! menuOpen" @click='toggle = !toggle' class="text-center noselect text-brown cursor-default pb-1  "><i>Social Media Marketing</i></p></router-link>
+            <router-link to="/Web-Development"><p class="text-center noselect text-brown cursor-default pb-2 "><i>Web Development</i></p></router-link>
           </div>
           <div class="w-1/4 rounded mx-auto h-0.5 bg-textbrown opacity-40"></div>
         </div> <div class="w-auto pb-3 pt-3">
-          <router-link to="/pricing"><p class="text-center text-brown cursor-pointer pb-1 ">Pricing</p></router-link>         
+          <router-link to="/pricing"><p class="text-center noselect text-brown cursor-default pb-1 ">Pricing</p></router-link>         
           <div class="w-1/4 rounded mx-auto h-0.5 bg-textbrown opacity-40"></div>
         </div> <div class="w-auto pb-3 pt-3">
-          <router-link to="/contact"><p class="text-center text-brown cursor-pointer pb-1 ">Contact Us</p></router-link>
+          <a href="#contactus"><p class="text-center noselect text-brown cursor-default pb-1 ">Contact Us</p></a>
           <div class="w-1/4 rounded mx-auto h-0.5 bg-textbrown opacity-40"></div>
         </div>
       </div>
     <router-view />
-    <div class="mt-10 bg-darkbrown pt-10 pb-10 pl-10 pr-10 mx-auto max-w-screen-lg rounded">
+    <div id="contactus" class="mt-10 bg-darkbrown pt-10 pb-10 pl-10 pr-10 mx-auto max-w-screen-lg rounded">
             <div data-aos="fade-left" class="md:flex mx-auto items-center justify-between">
               <div class="mx-auto">
                 <img class="md:hidden mx-auto" :src="require('./assets/pngs/social.png')"/>
@@ -190,6 +190,16 @@ export default {
 
         .drop-m.show {
           display: block;
+        }
+
+        .noselect {
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
+          -webkit-tap-highlight-color: transparent;
+          
+        }
+        :focus {
+          outline: none;
+          box-shadow: none;
         }
 
 </style>
