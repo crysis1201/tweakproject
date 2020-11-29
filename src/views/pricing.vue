@@ -1,6 +1,6 @@
 <template>
   <div id="pricing" class="mx-auto text-brown bg-babyblue h-full">
-    <body class="max-w-screen-lg mx-auto">
+    <div class="max-w-screen-lg mx-auto">
       <div class="bg-darkbrown rounded mx-auto flex justify-center pt-8 pb-8 mb-10">
         <img class="w-9/12" :src="require('../assets/icons/home.svg')"/>
       </div>
@@ -102,7 +102,7 @@
           </div>
         </div>
     </div>
-    </body>
+    </div>
   </div>
 </template>
 <style scoped>

@@ -128,6 +128,11 @@ export default {
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
         }
+
+        html,body {
+          width: 100%;
+          overflow-x: hidden;
+        }
         
         .menu-btn {
           position: relative;

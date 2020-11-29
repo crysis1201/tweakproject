@@ -1,6 +1,6 @@
 <template>
   <div id="services" class="mx-auto text-brown bg-babyblue h-full">
-    <body class="max-w-screen-lg mx-auto">
+    <div class="max-w-screen-lg mx-auto">
       <div class="bg-darkbrown rounded mx-auto flex justify-center pt-8 pb-8 mb-10">
         <img class="w-9/12" :src="require('../assets/icons/home.svg')"/>
       </div>
@@ -37,7 +37,7 @@
             </div>
           </div>
           <div  class="bg-darkblue mt-6 mobile:mb-0 mb-10  h-11/12">
-            <div data-aos="fade-left" class="max-w-screen-lg mountain absolute top-3/4">
+            <div data-aos="flip-up" class="max-w-screen-lg mountain absolute top-3/4">
                 <img class="mx-auto" :src="require('../assets/pngs/mountain.png')"/>
             </div>
             <div class="pt-10 mx-auto max-w-lg relative z-10  ">
@@ -120,7 +120,7 @@
               </div>
           </div>
       </div>
-    </body>
+    </div>
   </div>
 </template>
 <style scoped>
