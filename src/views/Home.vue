@@ -78,4 +78,11 @@ export default {
   font-family: 'Varela', sans-serif;
 }
 
+#home {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+  clear: both;
+}
+
 </style>

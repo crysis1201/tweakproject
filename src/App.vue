@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="mx-auto p-8 text-brown bg-babyblue" >
+  <div id="app" class="p-8 text-brown bg-babyblue" >
     <header data-aos="fade-left" class="max-w-screen-lg mx-auto flex justify-between items-center pb-10">
       <div class="inline-flex">
         <h1 class="text-lg text-brown "> Tweak Digital Service </h1>
@@ -23,7 +23,7 @@
             </div>
       </div>
     </header>
-      <div v-show='toggle' class="bg-babyblue z-10 transition-opacity tablet:hidden border-textpink border-opacity-70 border-2 h-auto pt-8 pb-8  w-11/12 mx-auto rounded shadow-2xl absolute left-0 right-0 ">
+      <div v-show='toggle' class="bg-babyblue z-100 transition-opacity tablet:hidden border-textpink border-opacity-70 border-2 h-auto pt-8 pb-8  w-11/12 mx-auto rounded shadow-2xl absolute left-0 right-0 ">
         <div class="w-auto">
           <router-link to="/"><p @click='toggle = !toggle, menuOpen = ! menuOpen' class="text-center noselect text-brown cursor-default py-3 px-5 ">Home</p></router-link>
           <div class="w-1/4 rounded mx-auto h-0.5 my-3 bg-textbrown opacity-40"></div>
