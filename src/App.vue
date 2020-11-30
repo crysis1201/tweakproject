@@ -23,24 +23,24 @@
             </div>
       </div>
     </header>
-      <div v-show='toggle' class="bg-babyblue z-100 transition-opacity tablet:hidden border-textpink border-opacity-70 border-2 h-auto pt-8 pb-8  w-11/12 mx-auto rounded shadow-2xl absolute left-0 right-0 ">
+      <div v-show='toggle' class="bg-babyblue z-100 transition-opacity tablet:hidden border-textpink border-opacity-70 border-2 h-auto pt-4 pb-4  w-11/12 mx-auto rounded shadow-2xl absolute left-0 right-0 ">
         <div class="w-auto">
-          <router-link to="/"><p @click='toggle = !toggle, menuOpen = ! menuOpen' class="text-center noselect text-brown cursor-default py-3 px-5 ">Home</p></router-link>
-          <div class="w-1/4 rounded mx-auto h-0.5 my-3 bg-textbrown opacity-40"></div>
+          <router-link to="/"><p @click='toggle = !toggle, menuOpen = ! menuOpen' class="text-center text-lg noselect text-brown cursor-default py-8 px-4 ">Home</p></router-link>
+     <!--<div class="w-1/4 rounded mx-auto h-0.5 my-3 bg-textbrown opacity-40"></div> -->
         </div>
           <div class="w-auto">
-          <p class="text-center noselect text-brown cursor-default py-3 px-5" @click="dropDown = ! dropDown" >Services</p>
+          <p class="text-center noselect text-brown cursor-default text-lg py-8 px-4 " @click="dropDown = ! dropDown" >Services</p>
           <div class="drop-m transition-opacity "  v-bind:class="{show: dropDown}">
-            <router-link to="/Social-Media-Marketing"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center noselect text-brown cursor-default py-3 px-5  "><i>Social Media Marketing</i></p></router-link>
-            <router-link to="/Web-Development"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center noselect text-brown cursor-default py-3 px-5 "><i>Web Development</i></p></router-link>
+            <router-link to="/Social-Media-Marketing"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center text-lg noselect text-brown cursor-default py-8 px-4   "><i>Social Media Marketing</i></p></router-link>
+            <router-link to="/Web-Development"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center noselect text-lg text-brown cursor-default py-8 px-4  "><i>Web Development</i></p></router-link>
           </div>
-          <div class="w-1/4 rounded mx-auto my-3 h-0.5 bg-textbrown opacity-40"></div>
+          <!--<div class="w-1/4 rounded mx-auto my-3 h-0.5 bg-textbrown opacity-40"></div>-->
         </div> <div class="w-auto">
-          <router-link to="/pricing"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center noselect text-brown cursor-default py-3 px-5 ">Pricing</p></router-link>         
-          <div class="w-1/4 rounded my-3 mx-auto h-0.5 bg-textbrown opacity-40"></div>
+          <router-link to="/pricing"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center text-lg noselect text-brown cursor-default py-8 px-4  ">Pricing</p></router-link>         
+          <!--<div class="w-1/4 rounded my-3 mx-auto h-0.5 bg-textbrown opacity-40"></div>-->
         </div> <div class="w-auto">
-          <a href="#contactus"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center noselect text-brown cursor-default py-3 px-5 ">Contact Us</p></a>
-          <div class="w-1/4 rounded mx-auto my-3 h-0.5 bg-textbrown opacity-40"></div>
+          <a href="#contactus"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center noselect text-lg text-brown cursor-default py-8 px-4  ">Contact Us</p></a>
+          <!--<div class="w-1/4 rounded mx-auto my-3 h-0.5 bg-textbrown opacity-40"></div>-->
         </div>
       </div>
     <router-view />
@@ -131,9 +131,11 @@ export default {
 
         html,body {
           width: 100%;
+          margin: 0;
+          padding: 0;
           overflow-x: hidden;
         }
-        
+
         .menu-btn {
           position: relative;
           display: flex;
