@@ -16,17 +16,17 @@
         <router-link to="/pricing"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Pricing</p></div></router-link>
         <router-link to="/contact"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Contact Us</p></div></router-link>
       </div>
-      <div @click='toggle = !toggle' class="flex tablet:hidden">
-            <div id="menu-btn"  @click="menuOpen = ! menuOpen" v-bind:class="{open: menuOpen}" class="menu-btn cursor-default flex items-center tablet:hidden ">
+      <div @click='toggle = !toggle, menuOpen = ! menuOpen' class="flex tablet:hidden">
+            <div id="menu-btn"  v-bind:class="{open: menuOpen}" class="menu-btn flex items-center tablet:hidden ">
               <div id="menu-btn__burger" class="menu-btn__burger"></div>
-              <p class="ml-3 cursor-default inner font-medium">Menu</p>
+              <p class="ml-3 inner font-medium">Menu</p>
             </div>
       </div>
     </header>
       <div v-show='toggle' class="bg-babyblue z-100 transition-opacity tablet:hidden border-textpink border-opacity-70 border-2 h-auto pt-4 pb-4  w-11/12 mx-auto rounded shadow-2xl absolute left-0 right-0 ">
         <div class="w-auto">
           <router-link to="/"><p @click='toggle = !toggle, menuOpen = ! menuOpen' class="text-center text-lg noselect text-brown cursor-default py-8 px-4 ">Home</p></router-link>
-     <!--<div class="w-1/4 rounded mx-auto h-0.5 my-3 bg-textbrown opacity-40"></div> -->
+          <!--<div class="w-1/4 rounded mx-auto h-0.5 my-3 bg-textbrown opacity-40"></div> -->
         </div>
           <div class="w-auto">
           <p class="text-center noselect text-brown cursor-default text-lg py-8 px-4 " @click="dropDown = ! dropDown" >Services</p>
