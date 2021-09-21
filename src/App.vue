@@ -13,7 +13,6 @@
             <router-link to="/Web-Development"><div class="text-brown text-center cursor-pointer hover:bg-hoverblue px-2 mx-4 py-1 my-3 italic rounded"><p>Web Development</p></div></router-link>
           </div>
         </div>
-        <router-link to="/pricing"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Pricing</p></div></router-link>
         <router-link to="/contact"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Contact Us</p></div></router-link>
       </div>
       <div @click='toggle = !toggle, menuOpen = ! menuOpen' class="flex tablet:hidden">
@@ -35,8 +34,7 @@
             <router-link to="/Web-Development"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center noselect text-lg text-brown cursor-default py-8 px-4  "><i>Web Development</i></p></router-link>
           </div>
           <!--<div class="w-1/4 rounded mx-auto my-3 h-0.5 bg-textbrown opacity-40"></div>-->
-        </div> <div class="w-auto">
-          <router-link to="/pricing"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center text-lg noselect text-brown cursor-default py-8 px-4  ">Pricing</p></router-link>         
+        </div> <div class="w-auto"
           <!--<div class="w-1/4 rounded my-3 mx-auto h-0.5 bg-textbrown opacity-40"></div>-->
         </div> <div class="w-auto">
           <a href="#contactus"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center noselect text-lg text-brown cursor-default py-8 px-4  ">Contact Us</p></a>
