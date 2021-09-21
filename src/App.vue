@@ -15,12 +15,6 @@
         </div>
         <router-link to="/contact"><div class="text-brown ml-12 cursor-pointer hover:bg-hoverblue px-2 py-1 rounded"><p>Contact Us</p></div></router-link>
       </div>
-      <div @click='toggle = !toggle, menuOpen = ! menuOpen' class="flex tablet:hidden">
-            <div id="menu-btn"  v-bind:class="{open: menuOpen}" class="menu-btn flex items-center tablet:hidden ">
-              <div id="menu-btn__burger" class="menu-btn__burger"></div>
-              <p class="ml-3 inner font-medium">Menu</p>
-            </div>
-      </div>
     </header>
       <div v-show='toggle' class="bg-babyblue z-100 transition-opacity tablet:hidden border-textpink border-opacity-70 border-2 h-auto pt-4 pb-4  w-11/12 mx-auto rounded shadow-2xl absolute left-0 right-0 ">
         <div class="w-auto">
@@ -34,7 +28,7 @@
             <router-link to="/Web-Development"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center noselect text-lg text-brown cursor-default py-8 px-4  "><i>Web Development</i></p></router-link>
           </div>
           <!--<div class="w-1/4 rounded mx-auto my-3 h-0.5 bg-textbrown opacity-40"></div>-->
-        </div> <div class="w-auto"
+        </div> <div class="w-auto">
           <!--<div class="w-1/4 rounded my-3 mx-auto h-0.5 bg-textbrown opacity-40"></div>-->
         </div> <div class="w-auto">
           <a href="#contactus"><p @click="menuOpen = ! menuOpen, toggle = !toggle" class="text-center noselect text-lg text-brown cursor-default py-8 px-4  ">Contact Us</p></a>
